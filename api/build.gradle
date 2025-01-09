@@ -1,0 +1,11 @@
+ext {
+    moduleName = 'datastore-common-api'
+}
+
+apply from: "${rootDir}/${configurationPath}/shared-gradle-files/api.gradle"
+
+dependencies {
+    implementation group: 'org.apache.commons', name: 'commons-lang3', version: dependencyVersions.apacheCommonsCommonsLang3Version
+    implementation group: 'org.apache.commons', name: 'commons-collections4', version: dependencyVersions.apacheCommonsCommonsCollections4Version
+    implementation group: 'com.google.guava', name: 'guava', version: dependencyVersions.googleGuavaGuavaVersion
+}

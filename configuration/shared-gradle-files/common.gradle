@@ -1,0 +1,91 @@
+//file:noinspection GrUnresolvedAccess
+//file:noinspection GroovyAssignabilityCheck
+
+apply plugin: 'java-library'
+apply plugin: 'com.github.spotbugs'
+
+import java.text.SimpleDateFormat
+
+configurations {
+    jar.archiveBaseName = moduleName
+}
+
+configurations.configureEach {
+    // check for updates every build
+    resolutionStrategy.cacheChangingModulesFor 0, 'seconds'
+}
+
+dependencies {
+    implementation group: 'org.slf4j', name: 'slf4j-api', version: dependencyVersions.slf4jSlf4jApiVersion
+    spotbugsPlugins group: 'com.h3xstream.findsecbugs', name: "findsecbugs-plugin", version: buildDependencies.h3xstreamFindsecbugsFindsecbugsPluginVersion
+    testRuntimeOnly 'org.junit.platform:junit-platform-launcher'
+}
+
+compileJava {
+    sourceCompatibility = JavaVersion.VERSION_21
+    targetCompatibility = JavaVersion.VERSION_21
+    options.fork = true
+}
+
+compileTestJava {
+    sourceCompatibility = JavaVersion.VERSION_21
+    targetCompatibility = JavaVersion.VERSION_21
+    options.fork = true
+}
+
+jar {
+    manifest {
+        attributes(
+                'Build-Timestamp': new SimpleDateFormat("yyyy-MM-dd'T'HH:mm:ss.SSSZ").format(new Date()),
+                'Created-By': "Gradle ${gradle.gradleVersion}",
+                'Build-Jdk-Spec': JavaVersion.VERSION_21,
+                'Implementation-Title': moduleName,
+                'Implementation-Version': project.version
+        )
+    }
+}
+
+javadoc {
+    options.tags = ["noinspection"]
+    options.addStringOption('Xdoclint:none', '-quiet')
+    excludes = ["**/Jaxb*", "**/ObjectFactory.java"] as Iterable<String>
+}
+
+spotbugs {
+    ignoreFailures.set(true)
+    excludeFilter.set(file("${rootDir}/${configurationPath}/spotbugs/excludeFilter.xml"))
+}
+
+spotbugsMain {
+    reports {
+        xml.required = true
+        html.required = false
+    }
+}
+
+spotbugsTest {
+    reports {
+        xml.required = true
+        html.required = false
+    }
+}
+
+apply from: "${rootDir}/${configurationPath}/shared-gradle-files/repositories.gradle"
+apply from: "${rootDir}/${configurationPath}/shared-gradle-files/testable.gradle"
+apply from: "${rootDir}/${configurationPath}/shared-gradle-files/checkstyle.gradle"
+
+repositories {
+    tasks.register('sourceJar', Jar) {
+        dependsOn classes
+        archiveBaseName.set("${moduleName}")
+        archiveClassifier.set("sources")
+        from sourceSets.main.allJava
+    }
+
+    tasks.register('javadocJar', Jar) {
+        dependsOn javadoc
+        archiveBaseName.set("${moduleName}")
+        archiveClassifier.set("javadoc")
+        from javadoc.destinationDir
+    }
+}

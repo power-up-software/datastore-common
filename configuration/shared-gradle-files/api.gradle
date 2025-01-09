@@ -1,0 +1,6 @@
+//file:noinspection GrUnresolvedAccess
+//file:noinspection GroovyAssignabilityCheck
+
+apply from: "${rootDir}/" + configurationPath + '/shared-gradle-files/common.gradle'
+apply from: "${rootDir}/" + configurationPath + '/shared-gradle-files/publish.gradle'
+apply from: "${rootDir}/" + configurationPath + '/shared-gradle-files/checkstyle.gradle'

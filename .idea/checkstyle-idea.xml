@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CheckStyle-IDEA" serialisationVersion="2">
+    <checkstyleVersion>10.21.0</checkstyleVersion>
+    <scanScope>JavaOnlyWithTests</scanScope>
+    <copyLibs>true</copyLibs>
+    <option name="thirdPartyClasspath"/>
+    <option name="activeLocationIds">
+      <option value="637096ba-09ef-4ac7-bdf0-a74dc3f736df"/>
+    </option>
+    <option name="locations">
+      <list>
+        <ConfigurationLocation id="bundled-sun-checks" type="BUNDLED" scope="All" description="Sun Checks">(bundled)</ConfigurationLocation>
+        <ConfigurationLocation id="bundled-google-checks" type="BUNDLED" scope="All" description="Google Checks">(bundled)</ConfigurationLocation>
+        <ConfigurationLocation id="637096ba-09ef-4ac7-bdf0-a74dc3f736df" type="PROJECT_RELATIVE" scope="All" description="Picard">
+          $PROJECT_DIR$/configuration/checkstyle/checkstyle.xml
+          <option name="properties">
+            <map>
+              <entry key="suppressionFile" value=""/>
+            </map>
+          </option>
+        </ConfigurationLocation>
+      </list>
+    </option>
+  </component>
+</project>

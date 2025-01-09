@@ -1,0 +1,21 @@
+<FindBugsFilter>
+  <Match>
+    <Bug pattern="UMAC_UNCALLABLE_METHOD_OF_ANONYMOUS_CLASS,EI_EXPOSE_REP,EI_EXPOSE_REP2,PI_DO_NOT_REUSE_PUBLIC_IDENTIFIERS_CLASS_NAMES"/>
+  </Match>
+  <Match>
+    <Class name="~.*\.*Test$"/>
+    <Bug
+        pattern="PATH_TRAVERSAL_IN,ST_WRITE_TO_STATIC_FROM_INSTANCE_METHOD,RV_RETURN_VALUE_IGNORED_NO_SIDE_EFFECT,NP_NONNULL_PARAM_VIOLATION,RV_RETURN_VALUE_IGNORED_BAD_PRACTICE,RCN_REDUNDANT_NULLCHECK_WOULD_HAVE_BEEN_A_NPE,HARD_CODE_PASSWORD,SQL_INJECTION_JDBC"/>
+  </Match>
+  <Match>
+    <Class name="~.*\.*Jaxb.*$"/>
+  </Match>
+  <Match>
+    <Class name="~.*\.*CommonDatabaseExecutor"/>
+    <Bug pattern="RCN_REDUNDANT_NULLCHECK_WOULD_HAVE_BEEN_A_NPE,SQL_INJECTION_JDBC"/>
+  </Match>
+  <Match>
+    <Class name="com.powerup.datastore.common.database.service.CommonExecutorTest"/>
+    <Bug pattern="OBL_UNSATISFIED_OBLIGATION"/>
+  </Match>
+</FindBugsFilter>

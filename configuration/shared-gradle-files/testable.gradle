@@ -1,0 +1,41 @@
+//file:noinspection GrUnresolvedAccess
+//file:noinspection GroovyAssignabilityCheck
+
+configurations {
+    tests
+    testArtifacts
+    mockitoAgent
+}
+
+dependencies {
+    testImplementation group: 'org.mockito', name: 'mockito-core', version: testLibDependencies.mockitoMockitoCoreVersion
+    testImplementation group: 'org.mockito', name: 'mockito-junit-jupiter', version: testLibDependencies.mockitoMockitoJunitJupiterVersion
+    testImplementation group: 'org.junit.jupiter', name: 'junit-jupiter-api', version: testLibDependencies.junitJupiterJunitJupiterApiVersion
+    testImplementation group: 'org.junit.jupiter', name: 'junit-jupiter-params', version: testLibDependencies.junitJupiterJunitJupiterParamsVersion
+    testRuntimeOnly group: 'org.junit.jupiter', name: 'junit-jupiter-engine', version: testLibDependencies.junitJupiterJunitJupiterEngineVersion
+    mockitoAgent group: 'org.mockito', name: 'mockito-core', version: testLibDependencies.mockitoMockitoCoreVersion
+}
+
+test {
+    useJUnitPlatform()
+    jvmArgs("-javaagent:${configurations.mockitoAgent.resolvedConfiguration.resolvedArtifacts[0].file}")
+    ignoreFailures = true
+    reports {
+        junitXml.required = true
+        html.required = false
+    }
+    exclude '**/*IntegrationTest*'
+}
+
+tasks.register('testJar', Jar) {
+    dependsOn testClasses
+    archiveBaseName.set("${moduleName}")
+    archiveClassifier.set("test")
+    from sourceSets.test.output
+}
+
+jar.finalizedBy testJar
+
+artifacts {
+    testArtifacts testJar
+}

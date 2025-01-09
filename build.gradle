@@ -1,0 +1,52 @@
+//file:noinspection GrUnresolvedAccess
+//file:noinspection GroovyAssignabilityCheck
+
+buildscript {
+    repositories {
+        gradlePluginPortal()
+    }
+}
+
+plugins {
+    id 'com.github.spotbugs' version '6.0.27'
+    id 'pl.allegro.tech.build.axion-release' version '1.18.16'
+    id 'com.github.ben-manes.versions' version '0.51.0'
+    id 'nu.studer.credentials' version '3.0'
+}
+
+ext {
+    configurationPath = "configuration"
+    mavenGroupId = 'com.powerupsoftwareengineering.datastore-common'
+    Object gradlePluginUrlProperty = project.findProperty('gradlePluginRepositoryUrl')
+    if (gradlePluginUrlProperty != null) {
+        gradlePluginRepositoryUrl = gradlePluginUrlProperty
+    }
+}
+
+apply from: 'configuration/dependencies.gradle'
+apply from: 'configuration/local_dependencies.gradle'
+
+scmVersion {
+    localOnly = false
+}
+
+ext {
+    configurationPath = "configuration/"
+    print "Using repo version: " + scmVersion.version + "\n"
+    productVersion = scmVersion.version
+    if (project.hasProperty('team_city_server')) {
+        nexus_username = "$team_city_nexus_username"
+        nexus_password = "$team_city_nexus_password"
+        nexus_url = "$team_city_nexus_url"
+    } else {
+        nexus_username = credentials.forKey('nexus_username')
+        nexus_password = credentials.forKey('nexus_password')
+    }
+}
+
+group = 'com.powerupsoftwareengineering.datastore-common'
+
+allprojects {
+    apply plugin: 'maven-publish'
+    version = productVersion
+}

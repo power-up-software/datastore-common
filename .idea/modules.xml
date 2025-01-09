@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/com.powerupsoftwareengineering.datastore-common.iml" filepath="$PROJECT_DIR$/.idea/modules/com.powerupsoftwareengineering.datastore-common.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/api/com.powerupsoftwareengineering.datastore-common.api.iml" filepath="$PROJECT_DIR$/.idea/modules/api/com.powerupsoftwareengineering.datastore-common.api.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/api/com.powerupsoftwareengineering.datastore-common.api.main.iml" filepath="$PROJECT_DIR$/.idea/modules/api/com.powerupsoftwareengineering.datastore-common.api.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/api/com.powerupsoftwareengineering.datastore-common.api.test.iml" filepath="$PROJECT_DIR$/.idea/modules/api/com.powerupsoftwareengineering.datastore-common.api.test.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/database/com.powerupsoftwareengineering.datastore-common.database.iml" filepath="$PROJECT_DIR$/.idea/modules/database/com.powerupsoftwareengineering.datastore-common.database.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/database/com.powerupsoftwareengineering.datastore-common.database.main.iml" filepath="$PROJECT_DIR$/.idea/modules/database/com.powerupsoftwareengineering.datastore-common.database.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/database/com.powerupsoftwareengineering.datastore-common.database.test.iml" filepath="$PROJECT_DIR$/.idea/modules/database/com.powerupsoftwareengineering.datastore-common.database.test.iml" />
+    </modules>
+  </component>
+</project>

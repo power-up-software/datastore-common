@@ -1,0 +1,11 @@
+//file:noinspection GrUnresolvedAccess
+//file:noinspection GroovyAssignabilityCheck
+
+apply plugin: 'checkstyle'
+
+checkstyle {
+    toolVersion = buildDependencies.checkstyleVersion
+    configFile = "${rootDir}/" + configurationPath + "/checkstyle/checkstyle.xml" as File
+    configProperties = ["suppressionFile": "${rootDir}/" + configurationPath + "/checkstyle/suppressions.xml"]
+    ignoreFailures = true
+}

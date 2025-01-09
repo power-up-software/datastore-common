@@ -1,0 +1,10 @@
+<FindBugsFilter>
+  <Match>
+    <Class name="~.*\.*CommonDatabaseExecutor"/>
+    <Bug pattern="RCN_REDUNDANT_NULLCHECK_WOULD_HAVE_BEEN_A_NPE,SQL_INJECTION_JDBC"/>
+  </Match>
+  <Match>
+    <Class name="com.powerup.datastore.common.database.service.CommonExecutorTest"/>
+    <Bug pattern="OBL_UNSATISFIED_OBLIGATION"/>
+  </Match>
+</FindBugsFilter>

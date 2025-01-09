@@ -1,0 +1,30 @@
+/*
+ * Copyright (c) Chris Picard 2021.
+ * All Rights Reserved
+ *
+ * IN NO EVENT SHALL REGENTS BE LIABLE TO ANY PARTY FOR DIRECT, INDIRECT, SPECIAL, INCIDENTAL, OR CONSEQUENTIAL DAMAGES,
+ * INCLUDING LOST PROFITS, ARISING OUT OF THE USE OF THIS SOFTWARE AND ITS DOCUMENTATION, EVEN IF REGENTS HAS BEEN ADVISED
+ * OF THE POSSIBILITY OF SUCH DAMAGE.
+ *
+ * REGENTS SPECIFICALLY DISCLAIMS ANY WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY
+ * AND FITNESS FOR A PARTICULAR PURPOSE. THE SOFTWARE AND ACCOMPANYING DOCUMENTATION, IF ANY, PROVIDED HEREUNDER IS PROVIDED
+ * "AS IS". REGENTS HAS NO OBLIGATION TO PROVIDE MAINTENANCE, SUPPORT, UPDATES, ENHANCEMENTS, OR MODIFICATIONS.
+ */
+
+ext {
+    moduleName = 'datastore-common-database'
+}
+
+apply from: "${rootDir}/${configurationPath}/shared-gradle-files/database.gradle"
+
+
+dependencies {
+    implementation project(':api')
+    implementation group: 'com.powerupsoftwareengineering.java-immutable-model', name: 'java-immutable-model', version: dependencyVersions.powerupsoftwareengineeringJavaImmutableModelJavaImmutableModelVersion
+    implementation group: 'com.powerupsoftwareengineering.lambda-functions', name: 'lambda-functions-api', version: dependencyVersions.powerupsoftwareengineeringLambdaFunctionsLambdaFunctionsVersion
+    implementation group: 'org.apache.commons', name: 'commons-collections4', version: dependencyVersions.apacheCommonsCommonsCollections4Version
+    implementation group: 'org.apache.commons', name: 'commons-lang3', version: dependencyVersions.apacheCommonsCommonsLang3Version
+    implementation group: 'com.google.guava', name: 'guava', version: dependencyVersions.googleGuavaGuavaVersion
+    testImplementation group: 'org.simplify4u', name: 'slf4j2-mock', version: testLibDependencies.simplify4uSlf4j2MockVersion
+    testImplementation group: 'findbugs', name: 'findbugs', version: testLibDependencies.findbugsFindbugsVersion
+}

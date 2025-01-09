@@ -1,0 +1,6 @@
+//file:noinspection GrUnresolvedAccess
+//file:noinspection GroovyAssignabilityCheck
+rootProject.name = 'com.powerupsoftwareengineering.datastore-common'
+
+include 'api'
+include 'database'

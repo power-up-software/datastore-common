@@ -1,0 +1,18 @@
+//file:noinspection GrUnresolvedAccess
+//file:noinspection GroovyAssignabilityCheck
+
+apply from: "${rootDir}/" + configurationPath + '/shared-gradle-files/common.gradle'
+apply from: "${rootDir}/" + configurationPath + '/shared-gradle-files/checkstyle.gradle'
+
+tasks.register('makeZip', Zip) {
+    archiveBaseName.set("${moduleName}")
+    from('.')
+    include 'iss/*'
+    include '*.bat'
+    archiveExtension.set('zip')
+}
+
+//Must be after makeZip is defined
+apply from: "${rootDir}/" + configurationPath + '/shared-gradle-files/publish.gradle'
+
+jar.dependsOn makeZip
