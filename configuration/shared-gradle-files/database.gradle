@@ -1,8 +1,8 @@
 //file:noinspection GrUnresolvedAccess
 //file:noinspection GroovyAssignabilityCheck
 
-apply from: "${rootDir}/" + configurationPath + '/shared-gradle-files/common.gradle'
-apply from: "${rootDir}/" + configurationPath + '/shared-gradle-files/checkstyle.gradle'
+apply from: "${rootDir}/${configurationPath}/shared-gradle-files/common.gradle"
+apply from: "${rootDir}/${configurationPath}/shared-gradle-files/checkstyle.gradle"
 
 dependencies {
     implementation group: 'org.yaml', name: 'snakeyaml', version: dependencyVersions.yamlSnakeyamlVersion

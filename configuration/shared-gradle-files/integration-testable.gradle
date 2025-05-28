@@ -3,9 +3,11 @@
 
 tasks.register('integrationTest', Test) {
     useJUnitPlatform()
-    description 'Runs the integration tests'
-    group 'Verification'
-    ignoreFailures true
+    testClassesDirs = testing.suites.test.sources.output.classesDirs
+    classpath = testing.suites.test.sources.runtimeClasspath
+    description = 'Runs the integration tests'
+    group = 'Verification'
+    ignoreFailures = true
     reports {
         junitXml.required = true
     }

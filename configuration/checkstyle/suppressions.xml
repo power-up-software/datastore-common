@@ -10,7 +10,6 @@
   <suppress checks="[a-zA-Z0-9]*" files=".*[\\/]generated[\\/].*"/>
   <suppress checks="JavadocMethodCheck" files=".*[\\/]test[\\/].*"/>
   <suppress checks="JavadocTypeCheck" files=".*[\\/]test[\\/].*"/>
-  <suppress checks="MagicNumberCheck" files=".*[\\/]test[\\/].*"/>
   <suppress checks="AvoidStaticImportCheck" files=".*[\\/]test[\\/].*"/>
   <suppress checks="ClassDataAbstractionCouplingCheck" files=".*[\\/]test[\\/].*"/>
 </suppressions>

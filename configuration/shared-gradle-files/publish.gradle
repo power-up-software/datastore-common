@@ -18,17 +18,4 @@ publishing {
             from components.java
         }
     }
-    if (!project.gradle.startParameter.offline) {
-        repositories {
-            maven {
-                name = "nexus"
-                url = nexus_url + "/repository/maven-releases/"
-                credentials {
-                    username = nexus_username
-                    password = nexus_password
-                }
-                allowInsecureProtocol = true
-            }
-        }
-    }
 }

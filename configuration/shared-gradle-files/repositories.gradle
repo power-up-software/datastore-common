@@ -3,17 +3,6 @@
 
 repositories {
     mavenLocal()
-    if (!project.gradle.startParameter.offline) {
-        maven {
-            name = "nexus"
-            url = nexus_url + "/repository/maven-releases/"
-            credentials {
-                username = nexus_username
-                password = nexus_password
-            }
-            allowInsecureProtocol = true
-        }
-    }
     mavenCentral()
     maven {
         url = "https://repo.spring.io/milestone/"
