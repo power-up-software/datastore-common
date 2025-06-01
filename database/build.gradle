@@ -21,11 +21,10 @@ apply from: "${rootDir}/${configurationPath}/shared-gradle-files/database.gradle
 dependencies {
     implementation project(':api')
 
-    implementation group: 'com.powerupsoftwareengineering.java-immutable-model', name: 'java-immutable-model', version: '1.7.61'
-    implementation group: 'com.powerupsoftwareengineering.lambda-functions', name: 'lambda-functions-api', version: '1.7.41'
-    implementation group: 'com.powerupsoftwareengineering.value-verification-library', name: 'value-verification-library-util', version: '0.0.4'
-
     implementation group: 'com.google.guava', name: 'guava', version: dependencyVersions.googleGuavaGuavaVersion
+    implementation group: 'com.powerupsoftwareengineering.java-immutable-model', name: 'java-immutable-model', version: dependencyVersions.powerupsoftwareengineeringJavaImmutableModelJavaImmutableModelVersion
+    implementation group: 'com.powerupsoftwareengineering.lambda-functions', name: 'lambda-functions-api', version: dependencyVersions.powerupsoftwareengineeringLambdaFunctionsLambdaFunctionsApiVersion
+    implementation group: 'com.powerupsoftwareengineering.value-verification-library', name: 'value-verification-library-util', version: dependencyVersions.powerupsoftwareengineeringValueVerificationLibraryValueVerificationLibraryUtilVersion
 
     testImplementation group: 'com.github.spotbugs', name: "spotbugs", version: testLibDependencies.githubSpotbugsSpotbugsVersion
     testImplementation group: 'org.simplify4u', name: 'slf4j2-mock', version: testLibDependencies.simplify4uSlf4j2MockVersion

@@ -5,7 +5,6 @@ apply from: "${rootDir}/${configurationPath}/shared-gradle-files/common.gradle"
 apply from: "${rootDir}/${configurationPath}/shared-gradle-files/checkstyle.gradle"
 
 dependencies {
-    implementation group: 'org.yaml', name: 'snakeyaml', version: dependencyVersions.yamlSnakeyamlVersion
     implementation group: 'org.mybatis', name: 'mybatis', version: dependencyVersions.mybatisMybatisVersion
     implementation group: 'org.mybatis', name: 'mybatis-spring', version: dependencyVersions.mybatisMybatisSpringVersion
     implementation group: 'org.mybatis.spring.boot', name: 'mybatis-spring-boot-starter', version: dependencyVersions.mybatisSpringBootMybatisSpringBootStarterVersion, {
@@ -13,8 +12,10 @@ dependencies {
         exclude group: "org.springframework"
     }
     implementation group: 'org.springframework.boot', name: 'spring-boot-starter-jdbc', version: dependencyVersions.springframeworkBootSpringBootStarterJdbcVersion
-    testImplementation group: 'org.springframework', name: 'spring-test', version: dependencyVersions.springframeworkSpringTestVersion
-    testImplementation group: 'org.springframework.security', name: 'spring-security-core', version: dependencyVersions.springframeworkSecuritySpringSecurityCoreVersion
+    implementation group: 'org.yaml', name: 'snakeyaml', version: dependencyVersions.yamlSnakeyamlVersion
+
+    testImplementation group: 'org.springframework', name: 'spring-test', version: testLibDependencies.springframeworkSpringTestVersion
+    testImplementation group: 'org.springframework.security', name: 'spring-security-core', version: testLibDependencies.springframeworkSecuritySpringSecurityCoreVersion
 }
 
 tasks.register('makeZip', Zip) {
