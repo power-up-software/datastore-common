@@ -9,6 +9,7 @@ configurations {
 
 dependencies {
     mockitoAgent group: 'org.mockito', name: 'mockito-core', version: testLibDependencies.mockitoMockitoCoreVersion
+
     testImplementation group: 'org.junit.jupiter', name: 'junit-jupiter-api', version: testLibDependencies.junitJupiterJunitJupiterApiVersion
     testImplementation group: 'org.junit.jupiter', name: 'junit-jupiter-params', version: testLibDependencies.junitJupiterJunitJupiterParamsVersion
     testImplementation group: 'org.mockito', name: 'mockito-core', version: testLibDependencies.mockitoMockitoCoreVersion
