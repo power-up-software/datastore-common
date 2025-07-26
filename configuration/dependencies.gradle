@@ -6,14 +6,14 @@ ext.buildDependencies = [
 
 ext.dependencyVersions = [
         googleGuavaGuavaVersion                                                              : '33.4.8-jre', //group: 'com.google.guava', name: 'guava'
-        mybatisMybatisSpringVersion                                                          : '3.0.4', //group: 'org.mybatis', name: 'mybatis-spring'
+        mybatisMybatisSpringVersion                                                          : '3.0.5', //group: 'org.mybatis', name: 'mybatis-spring'
         mybatisMybatisVersion                                                                : '3.5.19', //group: 'org.mybatis', name: 'mybatis'
         mybatisSpringBootMybatisSpringBootStarterVersion                                     : '3.0.4', //group: 'org.mybatis.spring.boot', name: 'mybatis-spring-boot-starter'
         powerupsoftwareengineeringJavaImmutableModelJavaImmutableModelVersion                : '1.7.61', //group: 'com.powerupsoftwareengineering.java-immutable-model', name: 'java-immutable-model'
         powerupsoftwareengineeringLambdaFunctionsLambdaFunctionsApiVersion                   : '1.7.41', //group: 'com.powerupsoftwareengineering.lambda-functions', name: 'lambda-functions-api'
         powerupsoftwareengineeringValueVerificationLibraryValueVerificationLibraryUtilVersion: '0.0.4', //group: 'com.powerupsoftwareengineering.value-verification-library', name: 'value-verification-library-util'
         slf4jSlf4jApiVersion                                                                 : '2.0.17', //group: 'org.slf4j', name: 'slf4j-api'
-        springframeworkBootSpringBootStarterJdbcVersion                                      : '3.4.6', //group: 'org.springframework.boot', name: 'spring-boot-starter-jdbc'
+        springframeworkBootSpringBootStarterJdbcVersion                                      : '4.0.0-M1', //group: 'org.springframework.boot', name: 'spring-boot-starter-jdbc'
         yamlSnakeyamlVersion                                                                 : '2.4', //group: 'org.yaml', name: 'snakeyaml'
 ]
 
@@ -25,6 +25,6 @@ ext.testLibDependencies = [
         mockitoMockitoCoreVersion                       : '5.18.0', //group: 'org.mockito', name: 'mockito-core'
         mockitoMockitoJunitJupiterVersion               : '5.18.0', //group: 'org.mockito', name: 'mockito-junit-jupiter'
         simplify4uSlf4j2MockVersion                     : '2.4.0', //group: 'org.simplify4u', name: 'slf4j2-mock'
-        springframeworkSecuritySpringSecurityCoreVersion: '6.4.6', //group: 'org.springframework.security', name: 'spring-security-core'
-        springframeworkSpringTestVersion                : '6.2.7', //group: 'org.springframework', name: 'spring-test'
+        springframeworkSecuritySpringSecurityCoreVersion: '7.0.0-M1', //group: 'org.springframework.security', name: 'spring-security-core'
+        springframeworkSpringTestVersion                : '7.0.0-M7', //group: 'org.springframework', name: 'spring-test'
 ]
