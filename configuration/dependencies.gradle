@@ -9,7 +9,7 @@ ext.dependencyVersions = [
         mybatisMybatisSpringVersion                                                          : '3.0.5', //group: 'org.mybatis', name: 'mybatis-spring'
         mybatisMybatisVersion                                                                : '3.5.19', //group: 'org.mybatis', name: 'mybatis'
         mybatisSpringBootMybatisSpringBootStarterVersion                                     : '3.0.4', //group: 'org.mybatis.spring.boot', name: 'mybatis-spring-boot-starter'
-        powerupsoftwareengineeringJavaImmutableModelJavaImmutableModelVersion                : '1.7.61', //group: 'com.powerupsoftwareengineering.java-immutable-model', name: 'java-immutable-model'
+        powerupsoftwareengineeringJavaImmutableModelJavaImmutableModelVersion                : '1.7.102', //group: 'com.powerupsoftwareengineering.java-immutable-model', name: 'java-immutable-model'
         powerupsoftwareengineeringLambdaFunctionsLambdaFunctionsApiVersion                   : '1.7.41', //group: 'com.powerupsoftwareengineering.lambda-functions', name: 'lambda-functions-api'
         powerupsoftwareengineeringValueVerificationLibraryValueVerificationLibraryUtilVersion: '0.0.4', //group: 'com.powerupsoftwareengineering.value-verification-library', name: 'value-verification-library-util'
         slf4jSlf4jApiVersion                                                                 : '2.0.17', //group: 'org.slf4j', name: 'slf4j-api'
