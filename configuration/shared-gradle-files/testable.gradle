@@ -20,6 +20,7 @@ test {
     useJUnitPlatform()
     jvmArgs("-javaagent:${configurations.mockitoAgent.resolvedConfiguration.resolvedArtifacts[0].file}")
     ignoreFailures = true
+    failOnNoDiscoveredTests = false
     reports {
         junitXml.required = true
         html.required = false
