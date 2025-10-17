@@ -1,6 +1,6 @@
 //file:noinspection GrUnresolvedAccess
 ext.buildDependencies = [
-        checkstyleVersion            : '10.26.1',
+        checkstyleVersion            : '11.1.0',
         githubSpotbugsSpotbugsVersion: '4.9.3', //group: 'com.github.spotbugs', name: 'spotbugs'
 ]
 
