@@ -22,14 +22,14 @@ dependencies {
 }
 
 compileJava {
-    sourceCompatibility = JavaVersion.VERSION_24
-    targetCompatibility = JavaVersion.VERSION_24
+    sourceCompatibility = JavaVersion.VERSION_25
+    targetCompatibility = JavaVersion.VERSION_25
     options.fork = true
 }
 
 compileTestJava {
-    sourceCompatibility = JavaVersion.VERSION_24
-    targetCompatibility = JavaVersion.VERSION_24
+    sourceCompatibility = JavaVersion.VERSION_25
+    targetCompatibility = JavaVersion.VERSION_25
     options.fork = true
 }
 
@@ -38,7 +38,7 @@ jar {
         attributes(
                 'Build-Timestamp': new SimpleDateFormat("yyyy-MM-dd'T'HH:mm:ss.SSSZ").format(new Date()),
                 'Created-By': "Gradle ${gradle.gradleVersion}",
-                'Build-Jdk-Spec': JavaVersion.VERSION_24,
+                'Build-Jdk-Spec': JavaVersion.VERSION_25,
                 'Implementation-Title': moduleName,
                 'Implementation-Version': project.version
         )
