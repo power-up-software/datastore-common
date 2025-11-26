@@ -1,2 +1,5 @@
 ext.localDependencyVersions = [
+        javaImmutableModelVersion      : 'tbd', //group: 'com.powerupsoftwareengineering.java-immutable-model'
+        lambdaFunctionsVersion         : 'tbd', //group: 'com.powerupsoftwareengineering.lambda-functions'
+        valueVerificationLibraryVersion: 'tbd', //group: 'com.powerupsoftwareengineering.value-verification-library'
 ]

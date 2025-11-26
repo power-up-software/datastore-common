@@ -21,10 +21,11 @@ apply from: "${rootDir}/${configurationPath}/shared-gradle-files/database.gradle
 dependencies {
     implementation project(':api')
 
+    implementation 'com.powerupsoftwareengineering.java-immutable-model:java-immutable-model:' + localDependencyVersions.javaImmutableModelVersion
+    implementation 'com.powerupsoftwareengineering.lambda-functions:lambda-functions-api:' + localDependencyVersions.lambdaFunctionsVersion
+    implementation 'com.powerupsoftwareengineering.value-verification-library:value-verification-library-util:' + localDependencyVersions.valueVerificationLibraryVersion
+
     implementation 'com.google.guava:guava:' + dependencyVersions.googleGuavaGuavaVersion
-    implementation 'com.powerupsoftwareengineering.java-immutable-model:java-immutable-model:' + dependencyVersions.powerupsoftwareengineeringJavaImmutableModelJavaImmutableModelVersion
-    implementation 'com.powerupsoftwareengineering.lambda-functions:lambda-functions-api:' + dependencyVersions.powerupsoftwareengineeringLambdaFunctionsLambdaFunctionsApiVersion
-    implementation 'com.powerupsoftwareengineering.value-verification-library:value-verification-library-util:' + dependencyVersions.powerupsoftwareengineeringValueVerificationLibraryValueVerificationLibraryUtilVersion
 
     testImplementation 'com.github.spotbugs:spotbugs:' + testLibDependencies.githubSpotbugsSpotbugsVersion
     testImplementation 'org.simplify4u:slf4j2-mock:' + testLibDependencies.simplify4uSlf4j2MockVersion
