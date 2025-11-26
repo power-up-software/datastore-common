@@ -21,11 +21,11 @@ apply from: "${rootDir}/${configurationPath}/shared-gradle-files/database.gradle
 dependencies {
     implementation project(':api')
 
-    implementation group: 'com.google.guava', name: 'guava', version: dependencyVersions.googleGuavaGuavaVersion
-    implementation group: 'com.powerupsoftwareengineering.java-immutable-model', name: 'java-immutable-model', version: dependencyVersions.powerupsoftwareengineeringJavaImmutableModelJavaImmutableModelVersion
-    implementation group: 'com.powerupsoftwareengineering.lambda-functions', name: 'lambda-functions-api', version: dependencyVersions.powerupsoftwareengineeringLambdaFunctionsLambdaFunctionsApiVersion
-    implementation group: 'com.powerupsoftwareengineering.value-verification-library', name: 'value-verification-library-util', version: dependencyVersions.powerupsoftwareengineeringValueVerificationLibraryValueVerificationLibraryUtilVersion
+    implementation 'com.google.guava:guava:' + dependencyVersions.googleGuavaGuavaVersion
+    implementation 'com.powerupsoftwareengineering.java-immutable-model:java-immutable-model:' + dependencyVersions.powerupsoftwareengineeringJavaImmutableModelJavaImmutableModelVersion
+    implementation 'com.powerupsoftwareengineering.lambda-functions:lambda-functions-api:' + dependencyVersions.powerupsoftwareengineeringLambdaFunctionsLambdaFunctionsApiVersion
+    implementation 'com.powerupsoftwareengineering.value-verification-library:value-verification-library-util:' + dependencyVersions.powerupsoftwareengineeringValueVerificationLibraryValueVerificationLibraryUtilVersion
 
-    testImplementation group: 'com.github.spotbugs', name: "spotbugs", version: testLibDependencies.githubSpotbugsSpotbugsVersion
-    testImplementation group: 'org.simplify4u', name: 'slf4j2-mock', version: testLibDependencies.simplify4uSlf4j2MockVersion
+    testImplementation 'com.github.spotbugs:spotbugs:' + testLibDependencies.githubSpotbugsSpotbugsVersion
+    testImplementation 'org.simplify4u:slf4j2-mock:' + testLibDependencies.simplify4uSlf4j2MockVersion
 }

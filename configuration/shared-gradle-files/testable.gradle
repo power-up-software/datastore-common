@@ -8,12 +8,12 @@ configurations {
 }
 
 dependencies {
-    mockitoAgent group: 'org.mockito', name: 'mockito-core', version: testLibDependencies.mockitoMockitoCoreVersion
-    testImplementation group: 'org.junit.jupiter', name: 'junit-jupiter-api', version: testLibDependencies.junitJupiterJunitJupiterApiVersion
-    testImplementation group: 'org.junit.jupiter', name: 'junit-jupiter-params', version: testLibDependencies.junitJupiterJunitJupiterParamsVersion
-    testImplementation group: 'org.mockito', name: 'mockito-core', version: testLibDependencies.mockitoMockitoCoreVersion
-    testImplementation group: 'org.mockito', name: 'mockito-junit-jupiter', version: testLibDependencies.mockitoMockitoJunitJupiterVersion
-    testRuntimeOnly group: 'org.junit.jupiter', name: 'junit-jupiter-engine', version: testLibDependencies.junitJupiterJunitJupiterEngineVersion
+    mockitoAgent 'org.mockito:mockito-core:' + testLibDependencies.mockitoMockitoCoreVersion
+    testImplementation 'org.junit.jupiter:junit-jupiter-api:' + testLibDependencies.junitJupiterJunitJupiterApiVersion
+    testImplementation 'org.junit.jupiter:junit-jupiter-params:' + testLibDependencies.junitJupiterJunitJupiterParamsVersion
+    testImplementation 'org.mockito:mockito-core:' + testLibDependencies.mockitoMockitoCoreVersion
+    testImplementation 'org.mockito:mockito-junit-jupiter:' + testLibDependencies.mockitoMockitoJunitJupiterVersion
+    testRuntimeOnly 'org.junit.jupiter:junit-jupiter-engine:' + testLibDependencies.junitJupiterJunitJupiterEngineVersion
 }
 
 test {
