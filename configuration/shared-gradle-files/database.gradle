@@ -5,17 +5,17 @@ apply from: "${rootDir}/${configurationPath}/shared-gradle-files/common.gradle"
 apply from: "${rootDir}/${configurationPath}/shared-gradle-files/checkstyle.gradle"
 
 dependencies {
-    implementation group: 'org.mybatis', name: 'mybatis', version: dependencyVersions.mybatisMybatisVersion
-    implementation group: 'org.mybatis', name: 'mybatis-spring', version: dependencyVersions.mybatisMybatisSpringVersion
-    implementation group: 'org.mybatis.spring.boot', name: 'mybatis-spring-boot-starter', version: dependencyVersions.mybatisSpringBootMybatisSpringBootStarterVersion, {
+    implementation 'org.mybatis.spring.boot:mybatis-spring-boot-starter:' + dependencyVersions.mybatisSpringBootMybatisSpringBootStarterVersion, {
         exclude group: "org.springframework.boot"
         exclude group: "org.springframework"
     }
-    implementation group: 'org.springframework.boot', name: 'spring-boot-starter-jdbc', version: dependencyVersions.springframeworkBootSpringBootStarterJdbcVersion
-    implementation group: 'org.yaml', name: 'snakeyaml', version: dependencyVersions.yamlSnakeyamlVersion
+    implementation 'org.mybatis:mybatis-spring:' + dependencyVersions.mybatisMybatisSpringVersion
+    implementation 'org.mybatis:mybatis:' + dependencyVersions.mybatisMybatisVersion
+    implementation 'org.springframework.boot:spring-boot-starter-jdbc:' + dependencyVersions.springframeworkBootSpringBootStarterJdbcVersion
+    implementation 'org.yaml:snakeyaml:' + dependencyVersions.yamlSnakeyamlVersion
 
-    testImplementation group: 'org.springframework', name: 'spring-test', version: testLibDependencies.springframeworkSpringTestVersion
-    testImplementation group: 'org.springframework.security', name: 'spring-security-core', version: testLibDependencies.springframeworkSecuritySpringSecurityCoreVersion
+    testImplementation 'org.springframework.security:spring-security-core:' + testLibDependencies.springframeworkSecuritySpringSecurityCoreVersion
+    testImplementation 'org.springframework:spring-test:' + testLibDependencies.springframeworkSpringTestVersion
 }
 
 tasks.register('makeZip', Zip) {
