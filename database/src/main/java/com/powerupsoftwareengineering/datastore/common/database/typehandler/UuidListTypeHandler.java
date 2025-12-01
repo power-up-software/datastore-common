@@ -17,7 +17,7 @@
 
 package com.powerupsoftwareengineering.datastore.common.database.typehandler;
 
-import com.powerup.value.verification.util.StringVerificationUtil;
+import com.powerupsoftwareengineering.value.verification.util.StringVerificationUtil;
 import java.sql.CallableStatement;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
