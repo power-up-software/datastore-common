@@ -1,5 +1,5 @@
 /*
- * Copyright (c) Power Up Software Engineering LLC 2025.
+ * Copyright (c) Power Up Software Engineering LLC 2026.
  *
  * This program is free software: you can redistribute it and/or modify
  * it under the terms of the GNU General Public License as published by
