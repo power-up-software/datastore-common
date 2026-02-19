@@ -26,5 +26,5 @@ ext.testLibDependencies = [
         mockitoMockitoJunitJupiterVersion               : '5.21.0', //group: 'org.mockito', name: 'mockito-junit-jupiter'
         simplify4uSlf4j2MockVersion                     : '2.4.0', //group: 'org.simplify4u', name: 'slf4j2-mock'
         springframeworkSecuritySpringSecurityCoreVersion: '7.1.0-M2', //group: 'org.springframework.security', name: 'spring-security-core'
-        springframeworkSpringTestVersion                : '7.0.4', //group: 'org.springframework', name: 'spring-test'
+        springframeworkSpringTestVersion                : '7.0.5', //group: 'org.springframework', name: 'spring-test'
 ]
