@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="CheckStyle-IDEA" serialisationVersion="2">
-    <checkstyleVersion>13.0.0</checkstyleVersion>
+    <checkstyleVersion>13.1.0</checkstyleVersion>
     <scanScope>JavaOnlyWithTests</scanScope>
     <copyLibs>true</copyLibs>
-    <option name="thirdPartyClasspath"/>
+    <option name="thirdPartyClasspath" />
     <option name="activeLocationIds">
-      <option value="637096ba-09ef-4ac7-bdf0-a74dc3f736df"/>
+      <option value="637096ba-09ef-4ac7-bdf0-a74dc3f736df" />
     </option>
     <option name="locations">
       <list>
@@ -16,7 +16,7 @@
           $PROJECT_DIR$/configuration/checkstyle/checkstyle.xml
           <option name="properties">
             <map>
-              <entry key="suppressionFile" value=""/>
+              <entry key="suppressionFile" value="" />
             </map>
           </option>
         </ConfigurationLocation>
