@@ -16,8 +16,8 @@ configurations.configureEach {
 }
 
 dependencies {
-    implementation group: 'org.slf4j', name: 'slf4j-api', version: dependencyVersions.slf4jSlf4jApiVersion
-    spotbugsPlugins group: 'com.github.spotbugs', name: "spotbugs", version: buildDependencies.githubSpotbugsSpotbugsVersion
+    implementation 'org.slf4j:slf4j-api:' + dependencyVersions.slf4jSlf4jApiVersion
+    spotbugsPlugins 'com.github.spotbugs:spotbugs:' + buildDependencies.githubSpotbugsSpotbugsVersion
     testRuntimeOnly 'org.junit.platform:junit-platform-launcher'
 }
 
