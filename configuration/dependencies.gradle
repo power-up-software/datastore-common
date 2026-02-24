@@ -5,6 +5,7 @@ ext.buildDependencies = [
 ]
 
 ext.dependencyVersions = [
+        githubSpotbugsSpotbugsVersion                                                        : '4.9.8', //group: 'com.github.spotbugs', name: 'spotbugs'
         googleGuavaGuavaVersion                                                              : '33.5.0-jre', //group: 'com.google.guava', name: 'guava'
         mybatisMybatisSpringVersion                                                          : '4.0.0', //group: 'org.mybatis', name: 'mybatis-spring'
         mybatisMybatisVersion                                                                : '3.5.19', //group: 'org.mybatis', name: 'mybatis'
