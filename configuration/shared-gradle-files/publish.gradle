@@ -12,7 +12,7 @@ publishing {
             if (project.tasks.findByName('testJar')) {
                 artifact testJar
             }
-            groupId = "${mavenGroupId}"
+            groupId = "${rootProject.mavenGroupId}"
             artifactId = "${moduleName}"
             version = project.version
             from components.java

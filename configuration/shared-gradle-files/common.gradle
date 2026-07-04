@@ -16,8 +16,8 @@ configurations.configureEach {
 }
 
 dependencies {
-    implementation 'org.slf4j:slf4j-api:' + dependencyVersions.slf4jSlf4jApiVersion
-    spotbugsPlugins 'com.github.spotbugs:spotbugs:' + buildDependencies.githubSpotbugsSpotbugsVersion
+    implementation 'org.slf4j:slf4j-api:' + rootProject.dependencyVersions.slf4jSlf4jApiVersion
+    spotbugsPlugins 'com.github.spotbugs:spotbugs:' + rootProject.buildDependencies.githubSpotbugsSpotbugsVersion
     testRuntimeOnly 'org.junit.platform:junit-platform-launcher'
 }
 
@@ -53,7 +53,7 @@ javadoc {
 
 spotbugs {
     ignoreFailures.set(true)
-    excludeFilter.set(file("${rootDir}/${configurationPath}/spotbugs/excludeFilter.xml"))
+    excludeFilter.set(file("${rootDir}/${rootProject.configurationPath}/spotbugs/excludeFilter.xml"))
 }
 
 spotbugsMain {
@@ -70,9 +70,9 @@ spotbugsTest {
     }
 }
 
-apply from: "${rootDir}/${configurationPath}/shared-gradle-files/repositories.gradle"
-apply from: "${rootDir}/${configurationPath}/shared-gradle-files/testable.gradle"
-apply from: "${rootDir}/${configurationPath}/shared-gradle-files/checkstyle.gradle"
+apply from: "${rootDir}/${rootProject.configurationPath}/shared-gradle-files/repositories.gradle"
+apply from: "${rootDir}/${rootProject.configurationPath}/shared-gradle-files/testable.gradle"
+apply from: "${rootDir}/${rootProject.configurationPath}/shared-gradle-files/checkstyle.gradle"
 
 repositories {
     tasks.register('sourceJar', Jar) {

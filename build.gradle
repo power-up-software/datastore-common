@@ -48,5 +48,5 @@ group = 'com.powerupsoftwareengineering.datastore-common'
 
 allprojects {
     apply plugin: 'maven-publish'
-    version = productVersion
+    version = rootProject.productVersion
 }

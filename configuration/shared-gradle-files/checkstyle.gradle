@@ -4,8 +4,8 @@
 apply plugin: 'checkstyle'
 
 checkstyle {
-    toolVersion = buildDependencies.checkstyleVersion
-    configFile = "${rootDir}/${configurationPath}/checkstyle/checkstyle.xml" as File
-    configProperties = ["suppressionFile": "${rootDir}/${configurationPath}/checkstyle/suppressions.xml"]
+    toolVersion = rootProject.buildDependencies.checkstyleVersion
+    configFile = "${rootDir}/${rootProject.configurationPath}/checkstyle/checkstyle.xml" as File
+    configProperties = ["suppressionFile": "${rootDir}/${rootProject.configurationPath}/checkstyle/suppressions.xml"]
     ignoreFailures = true
 }

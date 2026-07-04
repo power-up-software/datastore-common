@@ -1,21 +1,21 @@
 //file:noinspection GrUnresolvedAccess
 //file:noinspection GroovyAssignabilityCheck
 
-apply from: "${rootDir}/${configurationPath}/shared-gradle-files/common.gradle"
-apply from: "${rootDir}/${configurationPath}/shared-gradle-files/checkstyle.gradle"
+apply from: "${rootDir}/${rootProject.configurationPath}/shared-gradle-files/common.gradle"
+apply from: "${rootDir}/${rootProject.configurationPath}/shared-gradle-files/checkstyle.gradle"
 
 dependencies {
-    implementation 'org.mybatis.spring.boot:mybatis-spring-boot-starter:' + dependencyVersions.mybatisSpringBootMybatisSpringBootStarterVersion, {
+    implementation 'org.mybatis.spring.boot:mybatis-spring-boot-starter:' + rootProject.dependencyVersions.mybatisSpringBootMybatisSpringBootStarterVersion, {
         exclude group: "org.springframework.boot"
         exclude group: "org.springframework"
     }
-    implementation 'org.mybatis:mybatis-spring:' + dependencyVersions.mybatisMybatisSpringVersion
-    implementation 'org.mybatis:mybatis:' + dependencyVersions.mybatisMybatisVersion
-    implementation 'org.springframework.boot:spring-boot-starter-jdbc:' + dependencyVersions.springframeworkBootSpringBootStarterJdbcVersion
-    implementation 'org.yaml:snakeyaml:' + dependencyVersions.yamlSnakeyamlVersion
+    implementation 'org.mybatis:mybatis-spring:' + rootProject.dependencyVersions.mybatisMybatisSpringVersion
+    implementation 'org.mybatis:mybatis:' + rootProject.dependencyVersions.mybatisMybatisVersion
+    implementation 'org.springframework.boot:spring-boot-starter-jdbc:' + rootProject.dependencyVersions.springframeworkBootSpringBootStarterJdbcVersion
+    implementation 'org.yaml:snakeyaml:' + rootProject.dependencyVersions.yamlSnakeyamlVersion
 
-    testImplementation 'org.springframework.security:spring-security-core:' + testLibDependencies.springframeworkSecuritySpringSecurityCoreVersion
-    testImplementation 'org.springframework:spring-test:' + testLibDependencies.springframeworkSpringTestVersion
+    testImplementation 'org.springframework.security:spring-security-core:' + rootProject.testLibDependencies.springframeworkSecuritySpringSecurityCoreVersion
+    testImplementation 'org.springframework:spring-test:' + rootProject.testLibDependencies.springframeworkSpringTestVersion
 }
 
 tasks.register('makeZip', Zip) {
@@ -27,6 +27,6 @@ tasks.register('makeZip', Zip) {
 }
 
 //Must be after makeZip is defined
-apply from: "${rootDir}/" + configurationPath + '/shared-gradle-files/publish.gradle'
+apply from: "${rootDir}/" + rootProject.configurationPath + '/shared-gradle-files/publish.gradle'
 
 jar.dependsOn makeZip

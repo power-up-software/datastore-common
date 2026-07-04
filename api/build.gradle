@@ -2,7 +2,7 @@ ext {
     moduleName = 'datastore-common-api'
 }
 
-apply from: "${rootDir}/${configurationPath}/shared-gradle-files/api.gradle"
+apply from: "${rootDir}/${rootProject.configurationPath}/shared-gradle-files/standard-module.gradle"
 
 dependencies {
 }
