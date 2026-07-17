@@ -9,7 +9,7 @@ ext.dependencyVersions = [
         googleGuavaGuavaVersion                                                              : '33.6.0-jre', //group: 'com.google.guava', name: 'guava'
         mybatisMybatisSpringVersion                                                          : '4.1.0', //group: 'org.mybatis', name: 'mybatis-spring'
         mybatisMybatisVersion                                                                : '3.5.19', //group: 'org.mybatis', name: 'mybatis'
-        mybatisSpringBootMybatisSpringBootStarterVersion                                     : '4.0.1', //group: 'org.mybatis.spring.boot', name: 'mybatis-spring-boot-starter'
+        mybatisSpringBootMybatisSpringBootStarterVersion                                     : '4.1.0', //group: 'org.mybatis.spring.boot', name: 'mybatis-spring-boot-starter'
         powerupsoftwareengineeringJavaImmutableModelJavaImmutableModelVersion                : '2.0.53', //group: 'com.powerupsoftwareengineering.java-immutable-model', name: 'java-immutable-model'
         powerupsoftwareengineeringLambdaFunctionsLambdaFunctionsApiVersion                   : '2.0.40', //group: 'com.powerupsoftwareengineering.lambda-functions', name: 'lambda-functions-api'
         powerupsoftwareengineeringValueVerificationLibraryValueVerificationLibraryUtilVersion: '2.0.39', //group: 'com.powerupsoftwareengineering.value-verification-library', name: 'value-verification-library-util'
