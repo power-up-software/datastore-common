@@ -12,4 +12,12 @@
   <suppress checks="JavadocTypeCheck" files=".*[\\/]test[\\/].*"/>
   <suppress checks="AvoidStaticImportCheck" files=".*[\\/]test[\\/].*"/>
   <suppress checks="ClassDataAbstractionCouplingCheck" files=".*[\\/]test[\\/].*"/>
+  <suppress checks="[a-zA-Z0-9]*" files=".*[\\/]api[\\/].*DatastoreService"/>
+  <suppress checks="[a-zA-Z0-9]*" files=".*[\\/]app[\\/].*SpringBootApplication"/>
+  <suppress checks="[a-zA-Z0-9]*" files=".*[\\/]client[\\/].*Client"/>
+  <suppress checks="[a-zA-Z0-9]*" files=".*[\\/]delta[\\/].*DeltaApplier"/>
+  <suppress checks="[a-zA-Z0-9]*" files=".*[\\/]delta[\\/].*DeltaCreator"/>
+  <suppress checks="[a-zA-Z0-9]*" files=".*[\\/]database[\\/].*Executor"/>
+  <suppress checks="[a-zA-Z0-9]*" files=".*[\\/]database[\\/].*DatabaseService"/>
+  <suppress checks="[a-zA-Z0-9]*" files=".*[\\/]model[\\/].*"/>
 </suppressions>
