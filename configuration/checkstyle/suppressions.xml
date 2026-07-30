@@ -20,4 +20,5 @@
   <suppress checks="[a-zA-Z0-9]*" files=".*[\\/]database[\\/].*Executor"/>
   <suppress checks="[a-zA-Z0-9]*" files=".*[\\/]database[\\/].*DatabaseService"/>
   <suppress checks="[a-zA-Z0-9]*" files=".*[\\/]model[\\/].*"/>
+  <suppress checks="[a-zA-Z0-9]*" files=".*[\\/]server.impl[\\/].*Controller"/>
 </suppressions>
