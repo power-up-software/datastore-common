@@ -12,13 +12,13 @@
   <suppress checks="JavadocTypeCheck" files=".*[\\/]test[\\/].*"/>
   <suppress checks="AvoidStaticImportCheck" files=".*[\\/]test[\\/].*"/>
   <suppress checks="ClassDataAbstractionCouplingCheck" files=".*[\\/]test[\\/].*"/>
-  <suppress checks="[a-zA-Z0-9]*" files=".*[\\/]api[\\/].*DatastoreService"/>
-  <suppress checks="[a-zA-Z0-9]*" files=".*[\\/]app[\\/].*SpringBootApplication"/>
-  <suppress checks="[a-zA-Z0-9]*" files=".*[\\/]client[\\/].*Client"/>
-  <suppress checks="[a-zA-Z0-9]*" files=".*[\\/]delta[\\/].*DeltaApplier"/>
-  <suppress checks="[a-zA-Z0-9]*" files=".*[\\/]delta[\\/].*DeltaCreator"/>
-  <suppress checks="[a-zA-Z0-9]*" files=".*[\\/]database[\\/].*Executor"/>
-  <suppress checks="[a-zA-Z0-9]*" files=".*[\\/]database[\\/].*DatabaseService"/>
+  <suppress checks="[a-zA-Z0-9]*" files=".*[\\/]api[\\/].*DatastoreService.java$"/>
+  <suppress checks="[a-zA-Z0-9]*" files=".*[\\/]app[\\/].*SpringBootApplication.java$"/>
+  <suppress checks="[a-zA-Z0-9]*" files=".*[\\/]client[\\/].*Client.java$"/>
+  <suppress checks="[a-zA-Z0-9]*" files=".*[\\/]delta[\\/].*DeltaApplier.java$"/>
+  <suppress checks="[a-zA-Z0-9]*" files=".*[\\/]delta[\\/].*DeltaCreator.java$"/>
+  <suppress checks="[a-zA-Z0-9]*" files=".*[\\/]database[\\/].*Executor.java$"/>
+  <suppress checks="[a-zA-Z0-9]*" files=".*[\\/]database[\\/].*DatabaseService.java$"/>
   <suppress checks="[a-zA-Z0-9]*" files=".*[\\/]model[\\/].*"/>
-  <suppress checks="[a-zA-Z0-9]*" files=".*[\\/]server.impl[\\/].*Controller"/>
+  <suppress checks="[a-zA-Z0-9]*" files=".*[\\/]server.impl[\\/].*Controller.java$"/>
 </suppressions>
