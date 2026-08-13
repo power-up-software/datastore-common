@@ -19,6 +19,7 @@
   <suppress checks="[a-zA-Z0-9]*" files=".*[\\/]delta[\\/].*DeltaCreator.java$"/>
   <suppress checks="[a-zA-Z0-9]*" files=".*[\\/]database[\\/].*Executor.java$"/>
   <suppress checks="[a-zA-Z0-9]*" files=".*[\\/]database[\\/].*DatabaseService.java$"/>
+  <suppress checks="[a-zA-Z0-9]*" files=".*[\\/]database[\\/].*DatabaseServiceIntegrationTest.java$"/>
   <suppress checks="[a-zA-Z0-9]*" files=".*[\\/]model[\\/].*"/>
   <suppress checks="[a-zA-Z0-9]*" files=".*[\\/]server.impl[\\/].*Controller.java$"/>
 </suppressions>
