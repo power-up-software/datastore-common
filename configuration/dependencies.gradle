@@ -5,7 +5,7 @@ ext.buildDependencies = [
 ]
 
 ext.dependencyVersions = [
-        githubSpotbugsSpotbugsVersion                                                        : '4.10.3', //group: 'com.github.spotbugs', name: 'spotbugs'
+        githubSpotbugsSpotbugsVersion                                                        : '4.10.4', //group: 'com.github.spotbugs', name: 'spotbugs'
         googleGuavaGuavaVersion                                                              : '33.7.1-jre', //group: 'com.google.guava', name: 'guava'
         mybatisMybatisSpringVersion                                                          : '4.1.0', //group: 'org.mybatis', name: 'mybatis-spring'
         mybatisMybatisVersion                                                                : '3.5.19', //group: 'org.mybatis', name: 'mybatis'
@@ -19,7 +19,7 @@ ext.dependencyVersions = [
 ]
 
 ext.testLibDependencies = [
-        githubSpotbugsSpotbugsVersion                   : '4.10.3', //group: 'com.github.spotbugs', name: 'spotbugs'
+        githubSpotbugsSpotbugsVersion                   : '4.10.4', //group: 'com.github.spotbugs', name: 'spotbugs'
         junitJupiterJunitJupiterApiVersion              : '6.1.3', //group: 'org.junit.jupiter', name: 'junit-jupiter-api'
         junitJupiterJunitJupiterEngineVersion           : '6.1.3', //group: 'org.junit.jupiter', name: 'junit-jupiter-engine'
         junitJupiterJunitJupiterParamsVersion           : '6.1.3', //group: 'org.junit.jupiter', name: 'junit-jupiter-params'
