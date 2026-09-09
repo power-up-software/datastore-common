@@ -35,8 +35,6 @@ import org.slf4j.LoggerFactory;
  *
  * @author Chris Picard
  */
-//Mybatis uses this definition, but is referenced in xml so compiler does not realize it is used
-@SuppressWarnings("unused")
 public class IntegerListTypeHandler implements TypeHandler<List<Integer>> {
     private static final Logger logger = LoggerFactory.getLogger(IntegerListTypeHandler.class);
 

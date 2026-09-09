@@ -31,8 +31,6 @@ import org.apache.ibatis.type.JdbcType;
  *
  * @author Chris Picard
  */
-//Mybatis uses this definition, but is referenced in xml so compiler does not realize it is used
-@SuppressWarnings("unused")
 public class UuidBaseTypeHandler extends BaseTypeHandler<UUID> {
 
     /**

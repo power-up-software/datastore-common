@@ -29,7 +29,6 @@ import org.apache.ibatis.session.SqlSession;
  *
  * @author Chris Picard
  */
-@SuppressWarnings("unused")
 @FunctionalInterface
 public interface UpdateFunction<OneT extends ModelObject, TwoT extends SqlSession> {
 
@@ -42,6 +41,5 @@ public interface UpdateFunction<OneT extends ModelObject, TwoT extends SqlSessio
      *
      * @throws DatastoreSaveException Unable to update model object
      */
-    @SuppressWarnings("RedundantThrows")
     void apply(OneT one, OneT two, TwoT three) throws DatastoreSaveException;
 }

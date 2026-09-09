@@ -25,7 +25,6 @@ import java.io.Serial;
  *
  * @author Chris Picard
  */
-@SuppressWarnings("unused")
 public class DatastoreDeleteException extends Exception {
     /**
      * Serial Version ID implements the {@link java.io.Serializable} contract.

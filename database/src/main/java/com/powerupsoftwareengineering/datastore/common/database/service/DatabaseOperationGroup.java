@@ -29,7 +29,6 @@ import org.apache.ibatis.session.SqlSession;
  *
  * @author Chris Picard
  */
-@SuppressWarnings("unused")
 public class DatabaseOperationGroup<T extends ModelObject> {
     /**
      * The store function that is for inserting new model objects into the database.

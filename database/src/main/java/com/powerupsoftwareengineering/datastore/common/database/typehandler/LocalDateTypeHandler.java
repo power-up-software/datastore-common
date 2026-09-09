@@ -34,8 +34,6 @@ import org.apache.ibatis.type.TypeHandler;
  *
  * @author Chris Picard
  */
-//Mybatis uses this definition, but is referenced in xml so compiler does not realize it is used
-@SuppressWarnings("unused")
 public class LocalDateTypeHandler implements TypeHandler<LocalDate> {
 
     /**

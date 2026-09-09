@@ -29,7 +29,6 @@ import org.apache.ibatis.session.SqlSession;
  *
  * @author Chris Picard
  */
-@SuppressWarnings("unused")
 @FunctionalInterface
 public interface StoreFunction<OneT extends ModelObject, TwoT extends SqlSession> {
 
@@ -41,6 +40,5 @@ public interface StoreFunction<OneT extends ModelObject, TwoT extends SqlSession
      *
      * @throws DatastoreSaveException Unable to save model object
      */
-    @SuppressWarnings("RedundantThrows")
     void apply(OneT one, TwoT two) throws DatastoreSaveException;
 }

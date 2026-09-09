@@ -30,7 +30,6 @@ import org.apache.ibatis.session.SqlSession;
  *
  * @author Chris Picard
  */
-@SuppressWarnings("unused")
 @FunctionalInterface
 public interface CascadeUpdateFunction<OneT extends ModelObject, TwoT extends SqlSession> {
 
@@ -45,6 +44,5 @@ public interface CascadeUpdateFunction<OneT extends ModelObject, TwoT extends Sq
      *
      * @throws DatastoreSaveException Unable to update model object.
      */
-    @SuppressWarnings("RedundantThrows")
     OneT apply(OneT one, OneT two, TwoT three) throws DatastoreSaveException;
 }

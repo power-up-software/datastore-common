@@ -33,8 +33,6 @@ import org.apache.ibatis.type.TypeHandler;
  *
  * @author Chris Picard
  */
-//Mybatis uses this definition, but is referenced in xml so compiler does not realize it is used
-@SuppressWarnings("unused")
 public class StringListTypeHandler implements TypeHandler<List<String>> {
     private static final String COMMA_ESCAPE = "%;";
     private static final String COMMA = ",";
