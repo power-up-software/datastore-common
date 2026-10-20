@@ -5,17 +5,8 @@ apply from: "${rootDir}/${rootProject.configurationPath}/shared-gradle-files/com
 apply from: "${rootDir}/${rootProject.configurationPath}/shared-gradle-files/checkstyle.gradle"
 
 dependencies {
-    implementation 'org.mybatis.spring.boot:mybatis-spring-boot-starter:' + rootProject.dependencyVersions.mybatisSpringBootMybatisSpringBootStarterVersion, {
-        exclude group: "org.springframework.boot"
-        exclude group: "org.springframework"
-    }
     implementation 'org.mybatis:mybatis-spring:' + rootProject.dependencyVersions.mybatisMybatisSpringVersion
     implementation 'org.mybatis:mybatis:' + rootProject.dependencyVersions.mybatisMybatisVersion
-    implementation 'org.springframework.boot:spring-boot-starter-jdbc:' + rootProject.dependencyVersions.springframeworkBootSpringBootStarterJdbcVersion
-    implementation 'org.yaml:snakeyaml:' + rootProject.dependencyVersions.yamlSnakeyamlVersion
-
-    testImplementation 'org.springframework.security:spring-security-core:' + rootProject.testLibDependencies.springframeworkSecuritySpringSecurityCoreVersion
-    testImplementation 'org.springframework:spring-test:' + rootProject.testLibDependencies.springframeworkSpringTestVersion
 }
 
 tasks.register('makeZip', Zip) {

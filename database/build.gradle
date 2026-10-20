@@ -21,11 +21,7 @@ apply from: "${rootDir}/${rootProject.configurationPath}/shared-gradle-files/dat
 dependencies {
     implementation project(':api')
 
-    implementation 'com.google.guava:guava:' + rootProject.dependencyVersions.googleGuavaGuavaVersion
     implementation 'com.powerupsoftwareengineering.java-immutable-model:java-immutable-model:' + rootProject.dependencyVersions.powerupsoftwareengineeringJavaImmutableModelJavaImmutableModelVersion
     implementation 'com.powerupsoftwareengineering.lambda-functions:lambda-functions-api:' + rootProject.dependencyVersions.powerupsoftwareengineeringLambdaFunctionsLambdaFunctionsApiVersion
     implementation 'com.powerupsoftwareengineering.value-verification-library:value-verification-library-util:' + rootProject.dependencyVersions.powerupsoftwareengineeringValueVerificationLibraryValueVerificationLibraryUtilVersion
-
-    testImplementation 'com.github.spotbugs:spotbugs:' + rootProject.testLibDependencies.githubSpotbugsSpotbugsVersion
-    testImplementation 'org.simplify4u:slf4j2-mock:' + rootProject.testLibDependencies.simplify4uSlf4j2MockVersion
 }
