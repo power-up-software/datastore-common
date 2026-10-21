@@ -1,22 +1,22 @@
 //file:noinspection GrUnresolvedAccess
 ext.buildDependencies = [
-        checkstyleVersion            : '14.0.0',
+        checkstyleVersion            : '14.3.0',
         githubSpotbugsSpotbugsVersion: '4.10.5', //group: 'com.github.spotbugs', name: 'spotbugs'
 ]
 
 ext.dependencyVersions = [
         mybatisMybatisSpringVersion                                                          : '4.1.0', //group: 'org.mybatis', name: 'mybatis-spring'
         mybatisMybatisVersion                                                                : '3.5.19', //group: 'org.mybatis', name: 'mybatis'
-        powerupsoftwareengineeringJavaImmutableModelJavaImmutableModelVersion                : '2.0.53', //group: 'com.powerupsoftwareengineering.java-immutable-model', name: 'java-immutable-model'
+        powerupsoftwareengineeringJavaImmutableModelJavaImmutableModelVersion                : '2.0.118', //group: 'com.powerupsoftwareengineering.java-immutable-model', name: 'java-immutable-model'
         powerupsoftwareengineeringLambdaFunctionsLambdaFunctionsApiVersion                   : '2.0.40', //group: 'com.powerupsoftwareengineering.lambda-functions', name: 'lambda-functions-api'
-        powerupsoftwareengineeringValueVerificationLibraryValueVerificationLibraryUtilVersion: '2.0.39', //group: 'com.powerupsoftwareengineering.value-verification-library', name: 'value-verification-library-util'
+        powerupsoftwareengineeringValueVerificationLibraryValueVerificationLibraryUtilVersion: '2.0.84', //group: 'com.powerupsoftwareengineering.value-verification-library', name: 'value-verification-library-util'
         slf4jSlf4jApiVersion                                                                 : '2.0.20', //group: 'org.slf4j', name: 'slf4j-api'
 ]
 
 ext.testLibDependencies = [
-        junitJupiterJunitJupiterApiVersion              : '6.1.3', //group: 'org.junit.jupiter', name: 'junit-jupiter-api'
-        junitJupiterJunitJupiterEngineVersion           : '6.1.3', //group: 'org.junit.jupiter', name: 'junit-jupiter-engine'
-        junitJupiterJunitJupiterParamsVersion           : '6.1.3', //group: 'org.junit.jupiter', name: 'junit-jupiter-params'
-        mockitoMockitoCoreVersion                       : '5.24.0', //group: 'org.mockito', name: 'mockito-core'
-        mockitoMockitoJunitJupiterVersion               : '5.24.0', //group: 'org.mockito', name: 'mockito-junit-jupiter'
+        junitJupiterJunitJupiterApiVersion   : '6.1.3', //group: 'org.junit.jupiter', name: 'junit-jupiter-api'
+        junitJupiterJunitJupiterEngineVersion: '6.1.3', //group: 'org.junit.jupiter', name: 'junit-jupiter-engine'
+        junitJupiterJunitJupiterParamsVersion: '6.1.3', //group: 'org.junit.jupiter', name: 'junit-jupiter-params'
+        mockitoMockitoCoreVersion            : '5.24.0', //group: 'org.mockito', name: 'mockito-core'
+        mockitoMockitoJunitJupiterVersion    : '5.24.0', //group: 'org.mockito', name: 'mockito-junit-jupiter'
 ]
