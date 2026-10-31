@@ -6,7 +6,7 @@ ext.buildDependencies = [
 
 ext.dependencyVersions = [
         mybatisMybatisSpringVersion                                                          : '4.1.0', //group: 'org.mybatis', name: 'mybatis-spring'
-        mybatisMybatisVersion                                                                : '3.5.19', //group: 'org.mybatis', name: 'mybatis'
+        mybatisMybatisVersion                                                                : '3.6.0', //group: 'org.mybatis', name: 'mybatis'
         powerupsoftwareengineeringJavaImmutableModelJavaImmutableModelVersion                : '2.0.118', //group: 'com.powerupsoftwareengineering.java-immutable-model', name: 'java-immutable-model'
         powerupsoftwareengineeringLambdaFunctionsLambdaFunctionsApiVersion                   : '2.0.40', //group: 'com.powerupsoftwareengineering.lambda-functions', name: 'lambda-functions-api'
         powerupsoftwareengineeringValueVerificationLibraryValueVerificationLibraryUtilVersion: '2.0.84', //group: 'com.powerupsoftwareengineering.value-verification-library', name: 'value-verification-library-util'
